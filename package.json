@@ -1,0 +1,41 @@
+{
+  "name": "firebot-watch-streaks",
+  "formattedName": "Watch Streaks",
+  "author": "CrowsterTKC",
+  "description": "A custom Firebot script to add watch streak event support.",
+  "scriptOutputName": "watch-streaks",
+  "version": "1.0.0",
+  "main": "src/main.js",
+  "license": "GPL-3.0-or-later",
+  "repository": "git@github.com:CrowsterTKC/firebot-watch-streaks.git",
+  "scripts": {
+    "build": "webpack --config ./webpack.config.js",
+    "build:dev": "yarn build && yarn copy",
+    "copy": "node ./bin/copy-build.js",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "@crowbartools/firebot-custom-scripts-types": "^5.63.2",
+    "@eslint/compat": "^1.2.6",
+    "@twurple/api": "^8.0.2",
+    "@twurple/auth": "^8.0.2",
+    "@twurple/chat": "^8.0.2",
+    "@types/node": "^20.14.0",
+    "@typescript-eslint/eslint-plugin": "^8.24.1",
+    "@typescript-eslint/parser": "^8.19.1",
+    "bufferutil": "^4.1.0",
+    "eslint": "^9.17.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "^3.7.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "prettier": "^3.4.2",
+    "prettier-eslint": "^16.3.0",
+    "terser-webpack-plugin": "^5.3.10",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.9.2",
+    "utf-8-validate": "^6.0.6",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
